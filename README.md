@@ -63,6 +63,3 @@ pnpm test
 - tests/ (Vitest)
 
 ---
-
-Demo
-- https://drive.google.com/file/d/1qvQMonlFshfesal11oLjnq5yosyWCZ6K/view?usp=sharing
