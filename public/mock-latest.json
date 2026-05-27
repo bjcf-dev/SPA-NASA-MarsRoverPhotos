@@ -1,0 +1,124 @@
+{
+  "latest_photos": [
+    { "id": 2001, "sol": 1000,
+      "camera": { "id": 20, "name": "MAST", "rover_id": 5, "full_name": "Mast Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-05-30",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2002, "sol": 1000,
+      "camera": { "id": 21, "name": "NAVCAM", "rover_id": 5, "full_name": "Navigation Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-05-30",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2003, "sol": 1001,
+      "camera": { "id": 22, "name": "FHAZ", "rover_id": 5, "full_name": "Front Hazard Avoidance Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-05-31",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2004, "sol": 1001,
+      "camera": { "id": 23, "name": "RHAZ", "rover_id": 5, "full_name": "Rear Hazard Avoidance Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-05-31",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2005, "sol": 1002,
+      "camera": { "id": 24, "name": "PANCAM", "rover_id": 7, "full_name": "Panoramic Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2005-08-01",
+      "rover": { "id": 7, "name": "Opportunity", "landing_date": "2004-01-25", "launch_date": "2003-07-07", "status": "complete" }
+    },
+    { "id": 2006, "sol": 1002,
+      "camera": { "id": 21, "name": "NAVCAM", "rover_id": 5, "full_name": "Navigation Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-01",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2007, "sol": 1003,
+      "camera": { "id": 20, "name": "MAST", "rover_id": 5, "full_name": "Mast Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-02",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2008, "sol": 1003,
+      "camera": { "id": 22, "name": "FHAZ", "rover_id": 5, "full_name": "Front Hazard Avoidance Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-02",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2009, "sol": 1004,
+      "camera": { "id": 23, "name": "RHAZ", "rover_id": 5, "full_name": "Rear Hazard Avoidance Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-03",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2010, "sol": 1004,
+      "camera": { "id": 24, "name": "PANCAM", "rover_id": 6, "full_name": "Panoramic Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2004-04-20",
+      "rover": { "id": 6, "name": "Spirit", "landing_date": "2004-01-04", "launch_date": "2003-06-10", "status": "complete" }
+    },
+    { "id": 2011, "sol": 1005,
+      "camera": { "id": 21, "name": "NAVCAM", "rover_id": 5, "full_name": "Navigation Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-04",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2012, "sol": 1005,
+      "camera": { "id": 20, "name": "MAST", "rover_id": 5, "full_name": "Mast Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-04",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2013, "sol": 1006,
+      "camera": { "id": 22, "name": "FHAZ", "rover_id": 5, "full_name": "Front Hazard Avoidance Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-05",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2014, "sol": 1006,
+      "camera": { "id": 23, "name": "RHAZ", "rover_id": 5, "full_name": "Rear Hazard Avoidance Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-05",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2015, "sol": 1007,
+      "camera": { "id": 21, "name": "NAVCAM", "rover_id": 5, "full_name": "Navigation Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-06",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2016, "sol": 1007,
+      "camera": { "id": 20, "name": "MAST", "rover_id": 5, "full_name": "Mast Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-06",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2017, "sol": 1008,
+      "camera": { "id": 22, "name": "FHAZ", "rover_id": 5, "full_name": "Front Hazard Avoidance Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-07",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2018, "sol": 1008,
+      "camera": { "id": 23, "name": "RHAZ", "rover_id": 5, "full_name": "Rear Hazard Avoidance Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-07",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    },
+    { "id": 2019, "sol": 1009,
+      "camera": { "id": 24, "name": "PANCAM", "rover_id": 7, "full_name": "Panoramic Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2005-08-12",
+      "rover": { "id": 7, "name": "Opportunity", "landing_date": "2004-01-25", "launch_date": "2003-07-07", "status": "complete" }
+    },
+    { "id": 2020, "sol": 1010,
+      "camera": { "id": 20, "name": "MAST", "rover_id": 5, "full_name": "Mast Camera" },
+      "img_src": "/mock_img.png",
+      "earth_date": "2015-08-10",
+      "rover": { "id": 5, "name": "curiosity", "landing_date": "2012-08-06", "launch_date": "2011-11-26", "status": "active" }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mars Gallery</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body class="bg-zinc-900 text-gray-100 min-h-screen flex flex-col font-sans">
+  <header class="bg-red-900 p-6 shadow-lg">
+    <h1 class="text-3xl font-bold tracking-wide text-white">Mars Gallery</h1>
+  </header>
+
+  <main class="flex-grow container mx-auto px-4 py-8 space-y-8">
+    <section id="controls" class="bg-zinc-800 p-6 rounded-xl shadow-md flex flex-wrap items-end gap-4">
+      <form id="search-form" class="flex flex-wrap gap-4 items-end">
+        <label class="flex flex-col text-sm font-medium">
+          Rover:
+          <select id="rover-select" name="rover"
+            class="mt-1 rounded-md bg-zinc-700 text-gray-100 px-2 py-1 focus:ring-2 focus:ring-red-600">
+            <option value="curiosity">Curiosity</option>
+            <option value="opportunity">Opportunity</option>
+            <option value="spirit">Spirit</option>
+          </select>
+        </label>
+
+        <label class="flex flex-col text-sm font-medium">
+          Modo de cámara:
+          <select id="mode-select" name="mode"
+            class="mt-1 rounded-md bg-zinc-700 text-gray-100 px-2 py-1 focus:ring-2 focus:ring-red-600">
+            <option value="ANY">Cualquiera</option>
+            <option value="panoramico">Panorámico (MAST/PANCAM)</option>
+            <option value="navegacion">Navegación (NAVCAM/HAZCAM)</option>
+            <option value="diagnostico">Diagnóstico (MINITES/FHAZ/RHAZ)</option>
+          </select>
+        </label>
+
+        <div class="flex gap-2">
+          <button id="search-btn" type="submit"
+            class="bg-red-700 hover:bg-red-800 px-4 py-2 rounded-md text-white font-semibold transition">
+            Buscar
+          </button>
+          <button id="reset-btn" type="button"
+            class="bg-zinc-700 hover:bg-zinc-600 px-4 py-2 rounded-md text-white font-semibold transition">
+            Reset
+          </button>
+        </div>
+      </form>
+
+      <div id="last-query" class="text-sm text-gray-400">
+        Última búsqueda: <span id="last-query-badge" class="font-semibold text-white">—</span>
+      </div>
+    </section>
+
+    <section id="states" class="text-center space-y-4">
+      <div id="loader" class="hidden text-red-400">Cargando...</div>
+      <div id="error-banner" class="hidden text-red-600 font-semibold">
+        Ha ocurrido un error.
+      </div>
+      <div id="empty-state" class="hidden text-gray-400">
+        No se han encontrado fotos.
+      </div>
+    </section>
+
+    <section id="results" class="space-y-4">
+      <div id="stats" class="text-sm text-gray-400">
+        Total: <span id="stats-total" class="font-semibold text-white">0</span>
+      </div>
+
+      <div id="results-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
+
+      <div id="pagination" class="flex justify-center items-center gap-4 text-sm text-gray-300 mt-4">
+        <button id="pagination-prev"
+          class="bg-zinc-700 hover:bg-zinc-600 px-3 py-2 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled>
+          Anterior
+        </button>
+        <span id="pagination-info" class="font-medium">Página 1 / 1</span>
+        <button id="pagination-next"
+          class="bg-zinc-700 hover:bg-zinc-600 px-3 py-2 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled>
+          Siguiente
+        </button>
+      </div>
+    </section>
+
+    <section id="favorites-section" class="bg-zinc-800 p-6 rounded-xl shadow-md space-y-4">
+      <div class="flex justify-between items-center">
+        <button id="toggle-favorites-view" type="button"
+          class="bg-red-700 hover:bg-red-800 px-4 py-2 rounded-md text-white font-semibold transition">
+          Mostrar/Ocultar favoritos
+        </button>
+        <div class="text-sm text-gray-400">
+          Favoritos:
+          <span id="favorites-count" data-testid="favorites-count" class="font-semibold text-white">0</span>
+        </div>
+      </div>
+      <div id="favorites-list" data-testid="favorites-list" class="hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

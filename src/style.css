@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Estilos globales --- */
+:root {
+  --bg-dark: #1a1a1a;
+  --bg-light: #ffffff;
+  --text-dark: #213547;
+  --text-light: #ffffff;
+  --accent: #ef4444;
+  --radius: 0.75rem;
+}
+
+body {
+  @apply min-h-screen bg-gray-900 text-gray-100 flex flex-col items-center justify-start p-8;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+header {
+  @apply mb-8 text-center;
+}
+
+h1 {
+  @apply text-4xl font-bold text-red-500 drop-shadow-md;
+}
+
+/* --- Formularios y controles --- */
+#controls {
+  @apply mb-6 w-full max-w-4xl bg-gray-800 p-6 rounded-2xl shadow-lg;
+}
+
+form {
+  @apply flex flex-wrap gap-4 items-center justify-center mb-4;
+}
+
+label {
+  @apply flex flex-col text-sm text-gray-300;
+}
+
+select {
+  @apply bg-gray-700 text-white rounded-md p-2 mt-1 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-red-400;
+}
+
+button {
+  @apply bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2 rounded-md transition-colors duration-200;
+}
+
+/* --- Estados --- */
+#loader,
+#error-banner,
+#empty-state {
+  @apply text-center py-4 text-lg;
+}
+
+#error-banner {
+  @apply text-red-400 font-semibold;
+}
+
+/* --- Resultados --- */
+#results {
+  @apply w-full max-w-5xl;
+}
+
+#results-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6;
+}
+
+.photo-card {
+  @apply bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-700;
+}
+
+.photo-img {
+  @apply w-full h-64 object-cover;
+}
+
+.meta {
+  @apply p-4 text-sm text-gray-300;
+}
+
+.actions {
+  @apply p-4 text-center border-t border-gray-700;
+}
+
+.fav-toggle {
+  @apply bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-lg text-sm;
+}
+
+/* --- Favoritos --- */
+#favorites-section {
+  @apply mt-10 w-full max-w-5xl;
+}
+
+#favorites-list {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4;
+}
+
+/* --- Paginación --- */
+#pagination {
+  @apply flex justify-center items-center gap-4 mt-8;
+}
+
+#pagination button {
+  @apply bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg;
+}
+
+#pagination-info {
+  @apply text-gray-300;
+}
+
+#favorites-list {
+  transition: all 0.3s ease;
+}
+#favorites-list.hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+#favorites-list:not(.hidden) {
+  opacity: 1;
+  max-height: 2000px; /* Ajusta según sea necesario */
+}
